@@ -145,7 +145,7 @@ We utilize the **[Resume Dataset from Kaggle](https://www.kaggle.com/datasets/ga
 
 ---
 
-## Author
+## Authors
 
 Kishore
 
