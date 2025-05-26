@@ -41,6 +41,34 @@ An intelligent recruitment platform that automates hiring processes using AI age
 - Hire and onboard with AI-generated offer letters
 
 ---
+## 🗃️ Dataset Used
+
+We utilize the **[Resume Dataset from Kaggle](https://www.kaggle.com/datasets/gauravduttakiit/resume-dataset)** to train and fine-tune AI resume parsing and job role matching algorithms.
+
+### Dataset Highlights:
+- 1000+ real-world resumes
+- Labeled with profession categories (HR, Data Science, Developer, etc.)
+- Used for:
+  - Resume classification
+  - Keyword extraction
+  - AI screening model fine-tuning
+
+---
+
+## 🖼️ Architecture Design
+
+![Architecture Diagram](https://user-images.githubusercontent.com/46809038/126433985-b84b832a-a029-479f-922c-c344ee88a21e.png)
+
+### Overview:
+
+- 🧑 Candidates register via Clerk, upload resumes (stored in Supabase)
+- 🧑‍💼 Hiring Teams post jobs with AI-generated descriptions & requirements
+- ⚙️ AI Agents screen applications, rank candidates, detect bias
+- 📄 Candidate job matches are shown in real-time
+- 🧠 Backend Python services interact with OpenAI API + Supabase
+- ✅ All state is synced with PostgreSQL via Supabase client SDK
+
+---
 
 ## 📁 Features
 
@@ -117,80 +145,11 @@ An intelligent recruitment platform that automates hiring processes using AI age
 
 ---
 
-## 🧪 Running the App Locally
-
-### Frontend (Next.js + Tailwind + Clerk)
-```bash
-cd frontend
-npm install
-cp .env.local.example .env.local
-# Add NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY, NEXT_PUBLIC_SUPABASE_URL, etc.
-npm run dev
-Backend (Python + OpenAI)
-bash
-Copy
-Edit
-cd backend
-python -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-cp .env.example .env
-# Add OPENAI_API_KEY, SUPABASE credentials
-python app.py
-📄 Environment Variables
-.env.local (Frontend)
-makefile
-Copy
-Edit
-NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
-NEXT_PUBLIC_CLERK_FRONTEND_API=
-NEXT_PUBLIC_SUPABASE_URL=
-NEXT_PUBLIC_SUPABASE_ANON_KEY=
-.env (Backend)
-makefile
-Copy
-Edit
-OPENAI_API_KEY=
-SUPABASE_URL=
-SUPABASE_SERVICE_KEY=
-✨ Future Enhancements
-Subscription + Billing with Stripe
-
-Admin Dashboard
-
-AI Job Fit Scoring
-
-Multilingual Job & Resume support
-
-In-app Video Interview UI with Whisper/Realtime
-
-📜 License
-MIT License
-
-🧠 Credits
-Built using:
-
-OpenAI
-
-Supabase
-
-Clerk
-
-Next.js
-
-Tailwind CSS
-
-Python
-
-🚀 Start hiring smarter, not harder.
-yaml
-Copy
-Edit
-
----
-
-Let me know if you want a **versioned structure**, or **separate documentation for API usage**, or to connect **Stripe for subscriptions**.
-
-
+## Author
+kishore 
+Amurtha
+Mahima
+Abhishek
+Adinarayana
 
 
