@@ -146,10 +146,14 @@ We utilize the **[Resume Dataset from Kaggle](https://www.kaggle.com/datasets/ga
 ---
 
 ## Author
-kishore 
-Amurtha
-Mahima
-Abhishek
-Adinarayana
 
+Kishore
+
+Amurtha
+
+Mahima
+
+Abhishek
+
+Adinarayana
 
